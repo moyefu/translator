@@ -2,7 +2,7 @@
 
 require __DIR__ . '/vendor/autoload.php';
 
-use Moyefu\TranslatorFactory;
+use Moyefu\Core\TranslatorFactory;
 
 // 百度翻译示例
 $baiduTranslator = TranslatorFactory::create(TranslatorFactory::PLATFORM_BAIDU, [

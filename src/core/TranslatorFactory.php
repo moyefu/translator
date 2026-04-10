@@ -1,6 +1,14 @@
 <?php
 
-namespace Moyefu;
+namespace Moyefu\Core;
+
+use Moyefu\Translators\AliTranslator;
+use Moyefu\Translators\BaiduTranslator;
+use Moyefu\Translators\GoogleTranslator;
+use Moyefu\Translators\MicrosoftTranslator;
+use Moyefu\Translators\TencentTranslator;
+use Moyefu\Translators\VolcengineTranslator;
+use Moyefu\Translators\YoudaoTranslator;
 
 /**
  * 翻译器工厂类

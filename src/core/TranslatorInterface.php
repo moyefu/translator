@@ -1,6 +1,6 @@
 <?php
 
-namespace Moyefu;
+namespace Moyefu\Core;
 
 /**
  * 翻译器接口

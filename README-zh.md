@@ -4,7 +4,7 @@
 
 ## 特性
 
-- 支持多个翻译 API（百度、谷歌、有道）
+- 支持多个翻译 API（百度、谷歌、有道、腾讯、阿里、火山引擎、微软）
 - 所有翻译器的统一接口
 - 易于扩展新的翻译服务
 - 全面的错误处理
@@ -57,6 +57,30 @@ $youdaoTranslator = TranslatorFactory::create('youdao', [
     'appId' => 'your_youdao_app_id',
     'key' => 'your_youdao_key'
 ]);
+
+// 创建腾讯翻译器
+$tencentTranslator = TranslatorFactory::create('tencent', [
+    'secretId' => 'your_tencent_secret_id',
+    'secretKey' => 'your_tencent_secret_key'
+]);
+
+// 创建阿里翻译器
+$aliTranslator = TranslatorFactory::create('ali', [
+    'accessKeyId' => 'your_ali_access_key_id',
+    'accessKeySecret' => 'your_ali_access_key_secret'
+]);
+
+// 创建火山引擎翻译器
+$volcengineTranslator = TranslatorFactory::create('volcengine', [
+    'accessKeyId' => 'your_volcengine_access_key_id',
+    'accessKeySecret' => 'your_volcengine_access_key_secret'
+]);
+
+// 创建微软翻译器
+$microsoftTranslator = TranslatorFactory::create('microsoft', [
+    'apiKey' => 'your_microsoft_api_key',
+    'endpoint' => 'your_microsoft_endpoint'
+]);
 ```
 
 ### 高级用法
@@ -93,9 +117,13 @@ foreach ($texts as $text) {
 
 | 翻译器 | API 参考 | 必需配置 |
 |--------|----------|----------|
-| **baidu** | 百度翻译 API | `['appId' => '...', 'key' => '...']` |
-| **google** | 谷歌翻译 API | `['key' => '...']` |
-| **youdao** | 有道翻译 API | `['appId' => '...', 'key' => '...']` |
+| **baidu** | [百度翻译 API](file:///workspace/docs/platforms/baidu.md) | `['appId' => '...', 'key' => '...']` |
+| **google** | [谷歌翻译 API](file:///workspace/docs/platforms/google.md) | `['key' => '...']` |
+| **youdao** | [有道翻译 API](file:///workspace/docs/platforms/youdao.md) | `['appId' => '...', 'key' => '...']` |
+| **tencent** | [腾讯翻译 API](file:///workspace/docs/platforms/tencent.md) | `['secretId' => '...', 'secretKey' => '...']` |
+| **ali** | [阿里翻译 API](file:///workspace/docs/platforms/ali.md) | `['accessKeyId' => '...', 'accessKeySecret' => '...']` |
+| **volcengine** | [火山引擎翻译 API](file:///workspace/docs/platforms/volcengine.md) | `['accessKeyId' => '...', 'accessKeySecret' => '...']` |
+| **microsoft** | [微软翻译 API](file:///workspace/docs/platforms/microsoft.md) | `['apiKey' => '...', 'endpoint' => '...']` |
 
 ## API 参考
 
@@ -103,11 +131,15 @@ foreach ($texts as $text) {
 
 创建翻译器实例。
 
-- `$type`: 翻译器类型 (baidu, google, youdao)
+- `$type`: 翻译器类型 (baidu, google, youdao, tencent, ali, volcengine, microsoft)
 - `$config`: 配置数组
   - 对于百度: `['appId' => '...', 'key' => '...']`
   - 对于谷歌: `['key' => '...']`
   - 对于有道: `['appId' => '...', 'key' => '...']`
+  - 对于腾讯: `['secretId' => '...', 'secretKey' => '...']`
+  - 对于阿里: `['accessKeyId' => '...', 'accessKeySecret' => '...']`
+  - 对于火山引擎: `['accessKeyId' => '...', 'accessKeySecret' => '...']`
+  - 对于微软: `['apiKey' => '...', 'endpoint' => '...']`
 
 ### TranslatorInterface
 

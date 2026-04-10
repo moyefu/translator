@@ -1,30 +1,32 @@
 <?php
 
-namespace Moyefu;
+namespace Moyefu\Translators;
+
+use Moyefu\Core\Translator;
 
 use GuzzleHttp\Exception\GuzzleException;
 
 /**
- * 百度翻译器
- * 使用百度翻译 API 进行文本翻译
+ * 有道翻译器
+ * 使用有道翻译 API 进行文本翻译
  */
-class BaiduTranslator extends Translator
+class YoudaoTranslator extends Translator
 {
     /**
-     * 百度翻译 API 地址
+     * 有道翻译 API 地址
      */
-    const API_URL = 'https://fanyi-api.baidu.com/api/trans/vip/translate';
+    const API_URL = 'https://openapi.youdao.com/api';
 
     /**
-     * @var string 百度翻译应用 ID
+     * @var string 有道翻译应用 ID
      */
     protected $appId;
 
     /**
      * 构造函数
      *
-     * @param string|null $appId 百度翻译应用 ID（可选）
-     * @param string|null $key 百度翻译密钥（可选）
+     * @param string|null $appId 有道翻译应用 ID（可选）
+     * @param string|null $key 有道翻译密钥（可选）
      * @param array $options 附加选项配置（可选）
      */
     public function __construct($appId = null, $key = null, array $options = [])
@@ -36,9 +38,9 @@ class BaiduTranslator extends Translator
     }
 
     /**
-     * 设置百度翻译应用 ID
+     * 设置有道翻译应用 ID
      *
-     * @param string $appId 百度翻译应用 ID
+     * @param string $appId 有道翻译应用 ID
      * @return $this 返回当前实例，支持链式调用
      */
     public function setAppId($appId)
@@ -49,7 +51,7 @@ class BaiduTranslator extends Translator
 
     /**
      * 翻译文本
-     * 使用百度翻译 API 将文本从源语言翻译为目标语言
+     * 使用有道翻译 API 将文本从源语言翻译为目标语言
      *
      * @param string $text 要翻译的文本内容
      * @param string $from 源语言代码，例如 'en'（英语）、'zh'（中文）
@@ -63,23 +65,23 @@ class BaiduTranslator extends Translator
         $sign = md5($this->appId . $text . $salt . $this->key);
 
         try {
-            $response = $this->getClient()->request('GET', self::API_URL, [
-                'query' => [
+            $response = $this->getClient()->request('POST', self::API_URL, [
+                'form_params' => [
                     'q' => $text,
                     'from' => $from,
                     'to' => $to,
-                    'appid' => $this->appId,
+                    'appKey' => $this->appId,
                     'salt' => $salt,
                     'sign' => $sign
                 ]
             ]);
 
             $result = json_decode($response->getBody(), true);
-            if (isset($result['trans_result'][0]['dst'])) {
-                return $result['trans_result'][0]['dst'];
+            if (isset($result['translation'][0])) {
+                return $result['translation'][0];
             }
 
-            throw new \Exception(isset($result['error_msg']) ? $result['error_msg'] : '翻译失败');
+            throw new \Exception(isset($result['errorCode']) ? '错误: ' . $result['errorCode'] : '翻译失败');
         } catch (GuzzleException $e) {
             throw new \Exception('API 请求失败: ' . $e->getMessage());
         }

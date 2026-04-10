@@ -4,7 +4,7 @@ A PHP library for integrating with various translation APIs (Baidu, Google, Youd
 
 ## Features
 
-- Supports multiple translation APIs (Baidu, Google, Youdao)
+- Supports multiple translation APIs (Baidu, Google, Youdao, Tencent, Ali, Volcengine, Microsoft)
 - Unified interface for all translators
 - Easy to extend with new translation services
 - Comprehensive error handling
@@ -57,6 +57,30 @@ $youdaoTranslator = TranslatorFactory::create('youdao', [
     'appId' => 'your_youdao_app_id',
     'key' => 'your_youdao_key'
 ]);
+
+// Create Tencent translator
+$tencentTranslator = TranslatorFactory::create('tencent', [
+    'secretId' => 'your_tencent_secret_id',
+    'secretKey' => 'your_tencent_secret_key'
+]);
+
+// Create Ali translator
+$aliTranslator = TranslatorFactory::create('ali', [
+    'accessKeyId' => 'your_ali_access_key_id',
+    'accessKeySecret' => 'your_ali_access_key_secret'
+]);
+
+// Create Volcengine translator
+$volcengineTranslator = TranslatorFactory::create('volcengine', [
+    'accessKeyId' => 'your_volcengine_access_key_id',
+    'accessKeySecret' => 'your_volcengine_access_key_secret'
+]);
+
+// Create Microsoft translator
+$microsoftTranslator = TranslatorFactory::create('microsoft', [
+    'apiKey' => 'your_microsoft_api_key',
+    'endpoint' => 'your_microsoft_endpoint'
+]);
 ```
 
 ### Advanced Usage
@@ -93,9 +117,13 @@ foreach ($texts as $text) {
 
 | Translator | API Reference | Required Configuration |
 |------------|---------------|------------------------|
-| **baidu** | Baidu Translate API | `['appId' => '...', 'key' => '...']` |
-| **google** | Google Translate API | `['key' => '...']` |
-| **youdao** | Youdao Translate API | `['appId' => '...', 'key' => '...']` |
+| **baidu** | [Baidu Translate API](file:///workspace/docs/platforms/baidu.md) | `['appId' => '...', 'key' => '...']` |
+| **google** | [Google Translate API](file:///workspace/docs/platforms/google.md) | `['key' => '...']` |
+| **youdao** | [Youdao Translate API](file:///workspace/docs/platforms/youdao.md) | `['appId' => '...', 'key' => '...']` |
+| **tencent** | [Tencent Translate API](file:///workspace/docs/platforms/tencent.md) | `['secretId' => '...', 'secretKey' => '...']` |
+| **ali** | [Ali Translate API](file:///workspace/docs/platforms/ali.md) | `['accessKeyId' => '...', 'accessKeySecret' => '...']` |
+| **volcengine** | [Volcengine Translate API](file:///workspace/docs/platforms/volcengine.md) | `['accessKeyId' => '...', 'accessKeySecret' => '...']` |
+| **microsoft** | [Microsoft Translate API](file:///workspace/docs/platforms/microsoft.md) | `['apiKey' => '...', 'endpoint' => '...']` |
 
 ## API Reference
 
@@ -103,11 +131,15 @@ foreach ($texts as $text) {
 
 Create a translator instance.
 
-- `$type`: Translator type (baidu, google, youdao)
+- `$type`: Translator type (baidu, google, youdao, tencent, ali, volcengine, microsoft)
 - `$config`: Configuration array
   - For Baidu: `['appId' => '...', 'key' => '...']`
   - For Google: `['key' => '...']`
   - For Youdao: `['appId' => '...', 'key' => '...']`
+  - For Tencent: `['secretId' => '...', 'secretKey' => '...']`
+  - For Ali: `['accessKeyId' => '...', 'accessKeySecret' => '...']`
+  - For Volcengine: `['accessKeyId' => '...', 'accessKeySecret' => '...']`
+  - For Microsoft: `['apiKey' => '...', 'endpoint' => '...']`
 
 ### TranslatorInterface
 

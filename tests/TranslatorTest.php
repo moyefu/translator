@@ -3,7 +3,7 @@
 namespace Moyefu\Tests;
 
 use PHPUnit\Framework\TestCase;
-use Moyefu\TranslatorFactory;
+use Moyefu\Core\TranslatorFactory;
 
 class TranslatorTest extends TestCase
 {
@@ -17,47 +17,47 @@ class TranslatorTest extends TestCase
             'appId' => 'test_app_id',
             'key' => 'test_key'
         ]);
-        $this->assertInstanceOf('Moyefu\BaiduTranslator', $baiduTranslator);
+        $this->assertInstanceOf('Moyefu\Translators\BaiduTranslator', $baiduTranslator);
 
         // 测试谷歌翻译器创建
         $googleTranslator = TranslatorFactory::create(TranslatorFactory::PLATFORM_GOOGLE, [
             'key' => 'test_key'
         ]);
-        $this->assertInstanceOf('Moyefu\GoogleTranslator', $googleTranslator);
+        $this->assertInstanceOf('Moyefu\Translators\GoogleTranslator', $googleTranslator);
 
         // 测试有道翻译器创建
         $youdaoTranslator = TranslatorFactory::create(TranslatorFactory::PLATFORM_YOUDAO, [
             'appId' => 'test_app_id',
             'key' => 'test_key'
         ]);
-        $this->assertInstanceOf('Moyefu\YoudaoTranslator', $youdaoTranslator);
+        $this->assertInstanceOf('Moyefu\Translators\YoudaoTranslator', $youdaoTranslator);
 
         // 测试腾讯翻译器创建
         $tencentTranslator = TranslatorFactory::create(TranslatorFactory::PLATFORM_TENCENT, [
             'secretId' => 'test_secret_id',
             'secretKey' => 'test_secret_key'
         ]);
-        $this->assertInstanceOf('Moyefu\TencentTranslator', $tencentTranslator);
+        $this->assertInstanceOf('Moyefu\Translators\TencentTranslator', $tencentTranslator);
 
         // 测试阿里翻译器创建
         $aliTranslator = TranslatorFactory::create(TranslatorFactory::PLATFORM_ALI, [
             'accessKeyId' => 'test_access_key_id',
             'accessKeySecret' => 'test_access_key_secret'
         ]);
-        $this->assertInstanceOf('Moyefu\AliTranslator', $aliTranslator);
+        $this->assertInstanceOf('Moyefu\Translators\AliTranslator', $aliTranslator);
 
         // 测试火山翻译器创建
         $volcengineTranslator = TranslatorFactory::create(TranslatorFactory::PLATFORM_VOLCENGINE, [
             'accessKeyId' => 'test_access_key_id',
             'secretAccessKey' => 'test_secret_access_key'
         ]);
-        $this->assertInstanceOf('Moyefu\VolcengineTranslator', $volcengineTranslator);
+        $this->assertInstanceOf('Moyefu\Translators\VolcengineTranslator', $volcengineTranslator);
 
         // 测试微软翻译器创建
         $microsoftTranslator = TranslatorFactory::create(TranslatorFactory::PLATFORM_MICROSOFT, [
             'key' => 'test_key'
         ]);
-        $this->assertInstanceOf('Moyefu\MicrosoftTranslator', $microsoftTranslator);
+        $this->assertInstanceOf('Moyefu\Translators\MicrosoftTranslator', $microsoftTranslator);
     }
 
     /**
@@ -80,10 +80,10 @@ class TranslatorTest extends TestCase
 
         // 测试 setKey 方法
         $translator->setKey('new_key');
-        $this->assertInstanceOf('Moyefu\GoogleTranslator', $translator);
+        $this->assertInstanceOf('Moyefu\Translators\GoogleTranslator', $translator);
 
         // 测试 setOptions 方法
         $translator->setOptions(['timeout' => 10]);
-        $this->assertInstanceOf('Moyefu\GoogleTranslator', $translator);
+        $this->assertInstanceOf('Moyefu\Translators\GoogleTranslator', $translator);
     }
 }

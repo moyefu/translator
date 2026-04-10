@@ -12,7 +12,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Moyefu\\": "src/"
+            "Moyefu\\Core\\": "src/core/",
+            "Moyefu\\Translators\\": "src/translators/"
         }
     },
     "autoload-dev": {
