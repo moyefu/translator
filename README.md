@@ -1,5 +1,7 @@
 # Translator Library
 
+[中文文档](file:///workspace/README-zh.md) | [English Documentation](file:///workspace/README.md)
+
 A PHP library for integrating with various translation APIs (Baidu, Google, Youdao, etc.). This library provides a unified interface to easily switch between different translation services without changing your code.
 
 ## Features

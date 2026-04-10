@@ -1,5 +1,7 @@
 # 翻译器库
 
+[English Documentation](file:///workspace/README.md) | [中文文档](file:///workspace/README-zh.md)
+
 一个用于集成各种翻译 API（百度、谷歌、有道等）的 PHP 库。这个库提供了一个统一的接口，可以在不更改代码的情况下轻松切换不同的翻译服务。
 
 ## 特性
