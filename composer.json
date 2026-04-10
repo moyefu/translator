@@ -22,6 +22,7 @@
         }
     },
     "minimum-stability": "stable",
+    "license": "MIT",
     "config": {
         "audit": {
             "block-insecure": false
