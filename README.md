@@ -119,13 +119,13 @@ foreach ($texts as $text) {
 
 | Translator | API Reference | Required Configuration |
 |------------|---------------|------------------------|
-| **baidu** | [Baidu Translate API](docs/platforms/baidu-en.md) | `['appId' => '...', 'key' => '...']` |
-| **google** | [Google Translate API](docs/platforms/google-en.md) | `['key' => '...']` |
-| **youdao** | [Youdao Translate API](docs/platforms/youdao-en.md) | `['appId' => '...', 'key' => '...']` |
-| **tencent** | [Tencent Translate API](docs/platforms/tencent-en.md) | `['secretId' => '...', 'secretKey' => '...']` |
-| **ali** | [Ali Translate API](docs/platforms/ali-en.md) | `['accessKeyId' => '...', 'accessKeySecret' => '...']` |
-| **volcengine** | [Volcengine Translate API](docs/platforms/volcengine-en.md) | `['accessKeyId' => '...', 'accessKeySecret' => '...']` |
-| **microsoft** | [Microsoft Translate API](docs/platforms/microsoft-en.md) | `['apiKey' => '...', 'endpoint' => '...']` |
+| **baidu** | [Baidu Translate API](docs/platforms/baidu.md) | `['appId' => '...', 'key' => '...']` |
+| **google** | [Google Translate API](docs/platforms/google.md) | `['key' => '...']` |
+| **youdao** | [Youdao Translate API](docs/platforms/youdao.md) | `['appId' => '...', 'key' => '...']` |
+| **tencent** | [Tencent Translate API](docs/platforms/tencent.md) | `['secretId' => '...', 'secretKey' => '...']` |
+| **ali** | [Ali Translate API](docs/platforms/ali.md) | `['accessKeyId' => '...', 'accessKeySecret' => '...']` |
+| **volcengine** | [Volcengine Translate API](docs/platforms/volcengine.md) | `['accessKeyId' => '...', 'accessKeySecret' => '...']` |
+| **microsoft** | [Microsoft Translate API](docs/platforms/microsoft.md) | `['apiKey' => '...', 'endpoint' => '...']` |
 
 ## API Reference
 
