@@ -1,6 +1,6 @@
 # Tencent Translate API Application Guide
 
-[Home](../..) > [API Documentation](..) > [Tencent Translate API](tencent.md)
+[Home](../../README.md) > [API Documentation](./) > [Tencent Translate API](tencent.md)
 
 [中文版本](tencent-zh.md)
 

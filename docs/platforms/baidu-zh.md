@@ -1,6 +1,6 @@
 # 百度翻译 API 申请指南
 
-[首页](../..) > [API 文档](..) > [百度翻译 API](baidu-zh.md)
+[首页](../../README-zh.md) > [API 文档](./) > [百度翻译 API](baidu-zh.md)
 
 [English Version](baidu.md)
 

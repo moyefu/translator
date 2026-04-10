@@ -1,6 +1,6 @@
 # Google Translate API Application Guide
 
-[Home](../..) > [API Documentation](..) > [Google Translate API](google.md)
+[Home](../../README.md) > [API Documentation](./) > [Google Translate API](google.md)
 
 [中文版本](google-zh.md)
 

@@ -1,6 +1,6 @@
 # 火山引擎翻译 API 申请指南
 
-[首页](../..) > [API 文档](..) > [火山引擎翻译 API](volcengine-zh.md)
+[首页](../../README-zh.md) > [API 文档](./) > [火山引擎翻译 API](volcengine-zh.md)
 
 [English Version](volcengine.md)
 

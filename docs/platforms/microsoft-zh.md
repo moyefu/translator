@@ -1,6 +1,6 @@
 # 微软翻译 API 申请指南
 
-[首页](../..) > [API 文档](..) > [微软翻译 API](microsoft-zh.md)
+[首页](../../README-zh.md) > [API 文档](./) > [微软翻译 API](microsoft-zh.md)
 
 [English Version](microsoft.md)
 

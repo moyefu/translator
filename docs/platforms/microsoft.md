@@ -1,6 +1,6 @@
 # Microsoft Translate API Application Guide
 
-[Home](../..) > [API Documentation](..) > [Microsoft Translate API](microsoft.md)
+[Home](../../README.md) > [API Documentation](./) > [Microsoft Translate API](microsoft.md)
 
 [中文版本](microsoft-zh.md)
 

@@ -1,6 +1,6 @@
 # Youdao Translate API Application Guide
 
-[Home](../..) > [API Documentation](..) > [Youdao Translate API](youdao.md)
+[Home](../../README.md) > [API Documentation](./) > [Youdao Translate API](youdao.md)
 
 [中文版本](youdao-zh.md)
 

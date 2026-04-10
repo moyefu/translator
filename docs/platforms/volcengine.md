@@ -1,6 +1,6 @@
 # Volcengine Translate API Application Guide
 
-[Home](../..) > [API Documentation](..) > [Volcengine Translate API](volcengine.md)
+[Home](../../README.md) > [API Documentation](./) > [Volcengine Translate API](volcengine.md)
 
 [中文版本](volcengine-zh.md)
 
