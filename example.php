@@ -5,7 +5,7 @@ require __DIR__ . '/vendor/autoload.php';
 use Moyefu\TranslatorFactory;
 
 // 百度翻译示例
-$baiduTranslator = TranslatorFactory::create('baidu', [
+$baiduTranslator = TranslatorFactory::create(TranslatorFactory::PLATFORM_BAIDU, [
     'appId' => 'your_baidu_app_id',
     'key' => 'your_baidu_key'
 ]);
@@ -18,7 +18,7 @@ try {
 }
 
 // 谷歌翻译示例
-$googleTranslator = TranslatorFactory::create('google', [
+$googleTranslator = TranslatorFactory::create(TranslatorFactory::PLATFORM_GOOGLE, [
     'key' => 'your_google_key'
 ]);
 
@@ -30,7 +30,7 @@ try {
 }
 
 // 有道翻译示例
-$youdaoTranslator = TranslatorFactory::create('youdao', [
+$youdaoTranslator = TranslatorFactory::create(TranslatorFactory::PLATFORM_YOUDAO, [
     'appId' => 'your_youdao_app_id',
     'key' => 'your_youdao_key'
 ]);

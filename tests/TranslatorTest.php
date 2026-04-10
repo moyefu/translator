@@ -8,25 +8,25 @@ use Moyefu\TranslatorFactory;
 class TranslatorTest extends TestCase
 {
     /**
-     * Test translator factory creation
+     * 测试翻译器工厂创建
      */
     public function testFactoryCreation()
     {
-        // Test Baidu translator creation
-        $baiduTranslator = TranslatorFactory::create('baidu', [
+        // 测试百度翻译器创建
+        $baiduTranslator = TranslatorFactory::create(TranslatorFactory::PLATFORM_BAIDU, [
             'appId' => 'test_app_id',
             'key' => 'test_key'
         ]);
         $this->assertInstanceOf('Moyefu\BaiduTranslator', $baiduTranslator);
 
-        // Test Google translator creation
-        $googleTranslator = TranslatorFactory::create('google', [
+        // 测试谷歌翻译器创建
+        $googleTranslator = TranslatorFactory::create(TranslatorFactory::PLATFORM_GOOGLE, [
             'key' => 'test_key'
         ]);
         $this->assertInstanceOf('Moyefu\GoogleTranslator', $googleTranslator);
 
-        // Test Youdao translator creation
-        $youdaoTranslator = TranslatorFactory::create('youdao', [
+        // 测试有道翻译器创建
+        $youdaoTranslator = TranslatorFactory::create(TranslatorFactory::PLATFORM_YOUDAO, [
             'appId' => 'test_app_id',
             'key' => 'test_key'
         ]);
@@ -34,7 +34,7 @@ class TranslatorTest extends TestCase
     }
 
     /**
-     * Test invalid translator type
+     * 测试无效的翻译器类型
      */
     public function testInvalidTranslatorType()
     {
@@ -43,19 +43,19 @@ class TranslatorTest extends TestCase
     }
 
     /**
-     * Test translator methods
+     * 测试翻译器方法
      */
     public function testTranslatorMethods()
     {
-        $translator = TranslatorFactory::create('google', [
+        $translator = TranslatorFactory::create(TranslatorFactory::PLATFORM_GOOGLE, [
             'key' => 'test_key'
         ]);
 
-        // Test setKey method
+        // 测试 setKey 方法
         $translator->setKey('new_key');
         $this->assertInstanceOf('Moyefu\GoogleTranslator', $translator);
 
-        // Test setOptions method
+        // 测试 setOptions 方法
         $translator->setOptions(['timeout' => 10]);
         $this->assertInstanceOf('Moyefu\GoogleTranslator', $translator);
     }
