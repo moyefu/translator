@@ -1,5 +1,9 @@
 # Microsoft Translate API Application Guide
 
+[Home](../../../README.md) > [API Documentation](../../../docs/platforms) > [Microsoft Translate API](../../../docs/platforms/microsoft.md)
+
+[中文版本](../../../docs/platforms/microsoft-zh.md)
+
 ## Application Steps
 
 1. Visit [Microsoft Azure Official Website](https://azure.microsoft.com/)

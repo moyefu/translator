@@ -1,5 +1,9 @@
 # Google Translate API Application Guide
 
+[Home](../../../README.md) > [API Documentation](../../../docs/platforms) > [Google Translate API](../../../docs/platforms/google.md)
+
+[中文版本](../../../docs/platforms/google-zh.md)
+
 ## Application Steps
 
 1. Visit [Google Cloud Console](https://console.cloud.google.com/)

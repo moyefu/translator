@@ -1,5 +1,9 @@
 # Tencent Translate API Application Guide
 
+[Home](../../../README.md) > [API Documentation](../../../docs/platforms) > [Tencent Translate API](../../../docs/platforms/tencent.md)
+
+[中文版本](../../../docs/platforms/tencent-zh.md)
+
 ## Application Steps
 
 1. Visit [Tencent Cloud Official Website](https://cloud.tencent.com/)

@@ -1,22 +1,26 @@
-# Ali Translate API Application Guide
+# 阿里翻译 API 申请指南
 
-## Application Steps
+[首页](../../../README-zh.md) > [API 文档](../../../docs/platforms) > [阿里翻译 API](../../../docs/platforms/ali-zh.md)
 
-1. Visit [Alibaba Cloud Official Website](https://www.aliyun.com/)
-2. Register and log in to your Alibaba Cloud account
-3. Enter [Machine Translation Service](https://console.aliyun.com/product/ai/imt)
-4. Click the "Activate Now" button
-5. Complete real-name verification
-6. Create API credentials and get AccessKeyId and AccessKeySecret
+[English Version](../../../docs/platforms/ali.md)
 
-## Related Links
+## 申请步骤
 
-- [Alibaba Cloud Machine Translation Service](https://console.aliyun.com/product/ai/imt)
-- [Ali Translate API Documentation](https://help.aliyun.com/document_detail/158297.html)
-- [Ali Translate API Pricing](https://www.aliyun.com/price/product#/imt/detail)
+1. 访问 [阿里云官网](https://www.aliyun.com/)
+2. 注册并登录阿里云账号
+3. 进入 [机器翻译服务](https://console.aliyun.com/product/ai/imt)
+4. 点击「立即开通」按钮
+5. 完成实名认证
+6. 创建 API 密钥，获取 AccessKeyId 和 AccessKeySecret
 
-## Notes
+## 相关链接
 
-- Ali Translate API requires two parameters: AccessKeyId and AccessKeySecret
-- Free quota: New users get 1 million characters of free quota in the first month
-- Beyond free quota: ¥49 per million characters
+- [阿里云机器翻译服务](https://console.aliyun.com/product/ai/imt)
+- [阿里翻译 API 文档](https://help.aliyun.com/document_detail/158297.html)
+- [阿里翻译 API 价格](https://www.aliyun.com/price/product#/imt/detail)
+
+## 注意事项
+
+- 阿里翻译 API 需要 AccessKeyId 和 AccessKeySecret 两个参数
+- 免费额度：新用户首月可获得 100 万字符的免费额度
+- 超出免费额度后按 49 元/百万字符计费

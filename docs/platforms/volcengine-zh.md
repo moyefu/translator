@@ -1,22 +1,26 @@
-# Volcengine Translate API Application Guide
+# 火山引擎翻译 API 申请指南
 
-## Application Steps
+[首页](../../../README-zh.md) > [API 文档](../../../docs/platforms) > [火山引擎翻译 API](../../../docs/platforms/volcengine-zh.md)
 
-1. Visit [Volcengine Official Website](https://www.volcengine.com/)
-2. Register and log in to your Volcengine account
-3. Enter [Machine Translation Service](https://console.volcengine.com/tmt/overview)
-4. Click the "Activate Now" button
-5. Complete real-name verification
-6. Create API credentials and get AccessKeyId and AccessKeySecret
+[English Version](../../../docs/platforms/volcengine.md)
 
-## Related Links
+## 申请步骤
 
-- [Volcengine Machine Translation Service](https://console.volcengine.com/tmt/overview)
-- [Volcengine Translate API Documentation](https://www.volcengine.com/docs/6348/76457)
-- [Volcengine Translate API Pricing](https://www.volcengine.com/product/machine_translation/pricing)
+1. 访问 [火山引擎官网](https://www.volcengine.com/)
+2. 注册并登录火山引擎账号
+3. 进入 [机器翻译服务](https://console.volcengine.com/tmt/overview)
+4. 点击「立即开通」按钮
+5. 完成实名认证
+6. 创建 API 密钥，获取 AccessKeyId 和 AccessKeySecret
 
-## Notes
+## 相关链接
 
-- Volcengine Translate API requires two parameters: AccessKeyId and AccessKeySecret
-- Free quota: New users get 1 million characters of free quota in the first month
-- Beyond free quota: ¥49 per million characters
+- [火山引擎机器翻译服务](https://console.volcengine.com/tmt/overview)
+- [Volcengine 翻译 API 文档](https://www.volcengine.com/docs/6348/76457)
+- [Volcengine 翻译 API 价格](https://www.volcengine.com/product/machine_translation/pricing)
+
+## 注意事项
+
+- Volcengine 翻译 API 需要 AccessKeyId 和 AccessKeySecret 两个参数
+- 免费额度：新用户首月可获得 100 万字符的免费额度
+- 超出免费额度后按 49 元/百万字符计费

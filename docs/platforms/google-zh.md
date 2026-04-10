@@ -1,22 +1,26 @@
-# Google Translate API Application Guide
+# 谷歌翻译 API 申请指南
 
-## Application Steps
+[首页](../../../README-zh.md) > [API 文档](../../../docs/platforms) > [谷歌翻译 API](../../../docs/platforms/google-zh.md)
 
-1. Visit [Google Cloud Console](https://console.cloud.google.com/)
-2. Register and log in to your Google Cloud account
-3. Create a new project or select an existing one
-4. Enable the "Cloud Translation API" service
-5. Create API credentials and get API Key
-6. Set up billing (Google Cloud offers a free trial)
+[English Version](../../../docs/platforms/google.md)
 
-## Related Links
+## 申请步骤
+
+1. 访问 [Google Cloud Console](https://console.cloud.google.com/)
+2. 注册并登录 Google Cloud 账号
+3. 创建新项目或选择现有项目
+4. 启用 "Cloud Translation API" 服务
+5. 创建 API 凭据，获取 API Key
+6. 设置 billing（Google Cloud 提供免费试用）
+
+## 相关链接
 
 - [Google Cloud Console](https://console.cloud.google.com/)
-- [Google Translate API Documentation](https://cloud.google.com/translate/docs/)
-- [Google Translate API Pricing](https://cloud.google.com/translate/pricing)
+- [Google Translate API 文档](https://cloud.google.com/translate/docs/)
+- [Google Translate API 价格](https://cloud.google.com/translate/pricing)
 
-## Notes
+## 注意事项
 
-- Google Translate API requires an API Key parameter
-- Free quota: $300 free credit for new users
-- Beyond free quota: $20 per million characters
+- Google Translate API 需要 API Key 参数
+- 免费额度：新用户有 $300 免费信用额度
+- 超出免费额度后按 $20/百万字符计费

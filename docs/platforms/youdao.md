@@ -1,5 +1,9 @@
 # Youdao Translate API Application Guide
 
+[Home](../../../README.md) > [API Documentation](../../../docs/platforms) > [Youdao Translate API](../../../docs/platforms/youdao.md)
+
+[中文版本](../../../docs/platforms/youdao-zh.md)
+
 ## Application Steps
 
 1. Visit [Youdao Zhiyun Open Platform](https://ai.youdao.com/)

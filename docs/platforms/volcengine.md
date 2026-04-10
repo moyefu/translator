@@ -1,5 +1,9 @@
 # Volcengine Translate API Application Guide
 
+[Home](../../../README.md) > [API Documentation](../../../docs/platforms) > [Volcengine Translate API](../../../docs/platforms/volcengine.md)
+
+[中文版本](../../../docs/platforms/volcengine-zh.md)
+
 ## Application Steps
 
 1. Visit [Volcengine Official Website](https://www.volcengine.com/)

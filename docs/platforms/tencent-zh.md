@@ -1,22 +1,26 @@
-# Tencent Translate API Application Guide
+# 腾讯翻译 API 申请指南
 
-## Application Steps
+[首页](../../../README-zh.md) > [API 文档](../../../docs/platforms) > [腾讯翻译 API](../../../docs/platforms/tencent-zh.md)
 
-1. Visit [Tencent Cloud Official Website](https://cloud.tencent.com/)
-2. Register and log in to your Tencent Cloud account
-3. Enter [Machine Translation Service](https://console.cloud.tencent.com/tmt)
-4. Click the "Activate Now" button
-5. Complete real-name verification
-6. Create API credentials and get SecretId and SecretKey
+[English Version](../../../docs/platforms/tencent.md)
 
-## Related Links
+## 申请步骤
 
-- [Tencent Cloud Machine Translation Service](https://console.cloud.tencent.com/tmt)
-- [Tencent Translate API Documentation](https://cloud.tencent.com/document/product/551/15619)
-- [Tencent Translate API Pricing](https://cloud.tencent.com/product/tmt/pricing)
+1. 访问 [腾讯云官网](https://cloud.tencent.com/)
+2. 注册并登录腾讯云账号
+3. 进入 [机器翻译服务](https://console.cloud.tencent.com/tmt)
+4. 点击「立即开通」按钮
+5. 完成实名认证
+6. 创建 API 密钥，获取 SecretId 和 SecretKey
 
-## Notes
+## 相关链接
 
-- Tencent Translate API requires two parameters: SecretId and SecretKey
-- Free quota: New users get 1 million characters of free quota in the first month
-- Beyond free quota: ¥49 per million characters
+- [腾讯云机器翻译服务](https://console.cloud.tencent.com/tmt)
+- [腾讯翻译 API 文档](https://cloud.tencent.com/document/product/551/15619)
+- [腾讯翻译 API 价格](https://cloud.tencent.com/product/tmt/pricing)
+
+## 注意事项
+
+- 腾讯翻译 API 需要 SecretId 和 SecretKey 两个参数
+- 免费额度：新用户首月可获得 100 万字符的免费额度
+- 超出免费额度后按 49 元/百万字符计费

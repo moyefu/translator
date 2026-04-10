@@ -1,5 +1,9 @@
 # Ali Translate API Application Guide
 
+[Home](../../../README.md) > [API Documentation](../../../docs/platforms) > [Ali Translate API](../../../docs/platforms/ali.md)
+
+[中文版本](../../../docs/platforms/ali-zh.md)
+
 ## Application Steps
 
 1. Visit [Alibaba Cloud Official Website](https://www.aliyun.com/)

@@ -1,5 +1,9 @@
 # Baidu Translate API Application Guide
 
+[Home](../../../README.md) > [API Documentation](../../../docs/platforms) > [Baidu Translate API](../../../docs/platforms/baidu.md)
+
+[中文版本](../../../docs/platforms/baidu-zh.md)
+
 ## Application Steps
 
 1. Visit [Baidu Translation Open Platform](https://fanyi-api.baidu.com/)
