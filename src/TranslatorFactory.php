@@ -24,15 +24,41 @@ class TranslatorFactory
     const PLATFORM_YOUDAO = 'youdao';
 
     /**
+     * 腾讯翻译平台
+     */
+    const PLATFORM_TENCENT = 'tencent';
+
+    /**
+     * 阿里翻译平台
+     */
+    const PLATFORM_ALI = 'ali';
+
+    /**
+     * 火山翻译平台
+     */
+    const PLATFORM_VOLCENGINE = 'volcengine';
+
+    /**
+     * 微软翻译平台
+     */
+    const PLATFORM_MICROSOFT = 'microsoft';
+
+    /**
      * 创建翻译器实例
      *
      * @param string $type 翻译平台类型，使用常量：
      *                     - TranslatorFactory::PLATFORM_BAIDU  百度翻译
      *                     - TranslatorFactory::PLATFORM_GOOGLE 谷歌翻译
      *                     - TranslatorFactory::PLATFORM_YOUDAO 有道翻译
+     *                     - TranslatorFactory::PLATFORM_TENCENT 腾讯翻译
+     *                     - TranslatorFactory::PLATFORM_ALI 阿里翻译
+     *                     - TranslatorFactory::PLATFORM_VOLCENGINE 火山翻译
+     *                     - TranslatorFactory::PLATFORM_MICROSOFT 微软翻译
      * @param array $config 配置数组，根据不同平台需要不同的参数：
      *                      - 百度/有道：['appId' => '...', 'key' => '...', 'options' => [...]]
-     *                      - 谷歌：['key' => '...', 'options' => [...]]
+     *                      - 谷歌/微软：['key' => '...', 'options' => [...]]
+     *                      - 腾讯：['secretId' => '...', 'secretKey' => '...', 'options' => [...]]
+     *                      - 阿里/火山：['accessKeyId' => '...', 'secretAccessKey' => '...', 'options' => [...]]
      * @return TranslatorInterface 翻译器实例
      * @throws \InvalidArgumentException 当翻译平台类型无效时抛出异常
      */
@@ -53,6 +79,29 @@ class TranslatorFactory
             case self::PLATFORM_YOUDAO:
                 return new YoudaoTranslator(
                     isset($config['appId']) ? $config['appId'] : null,
+                    isset($config['key']) ? $config['key'] : null,
+                    isset($config['options']) ? $config['options'] : []
+                );
+            case self::PLATFORM_TENCENT:
+                return new TencentTranslator(
+                    isset($config['secretId']) ? $config['secretId'] : null,
+                    isset($config['secretKey']) ? $config['secretKey'] : null,
+                    isset($config['options']) ? $config['options'] : []
+                );
+            case self::PLATFORM_ALI:
+                return new AliTranslator(
+                    isset($config['accessKeyId']) ? $config['accessKeyId'] : null,
+                    isset($config['accessKeySecret']) ? $config['accessKeySecret'] : null,
+                    isset($config['options']) ? $config['options'] : []
+                );
+            case self::PLATFORM_VOLCENGINE:
+                return new VolcengineTranslator(
+                    isset($config['accessKeyId']) ? $config['accessKeyId'] : null,
+                    isset($config['secretAccessKey']) ? $config['secretAccessKey'] : null,
+                    isset($config['options']) ? $config['options'] : []
+                );
+            case self::PLATFORM_MICROSOFT:
+                return new MicrosoftTranslator(
                     isset($config['key']) ? $config['key'] : null,
                     isset($config['options']) ? $config['options'] : []
                 );

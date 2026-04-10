@@ -31,6 +31,33 @@ class TranslatorTest extends TestCase
             'key' => 'test_key'
         ]);
         $this->assertInstanceOf('Moyefu\YoudaoTranslator', $youdaoTranslator);
+
+        // 测试腾讯翻译器创建
+        $tencentTranslator = TranslatorFactory::create(TranslatorFactory::PLATFORM_TENCENT, [
+            'secretId' => 'test_secret_id',
+            'secretKey' => 'test_secret_key'
+        ]);
+        $this->assertInstanceOf('Moyefu\TencentTranslator', $tencentTranslator);
+
+        // 测试阿里翻译器创建
+        $aliTranslator = TranslatorFactory::create(TranslatorFactory::PLATFORM_ALI, [
+            'accessKeyId' => 'test_access_key_id',
+            'accessKeySecret' => 'test_access_key_secret'
+        ]);
+        $this->assertInstanceOf('Moyefu\AliTranslator', $aliTranslator);
+
+        // 测试火山翻译器创建
+        $volcengineTranslator = TranslatorFactory::create(TranslatorFactory::PLATFORM_VOLCENGINE, [
+            'accessKeyId' => 'test_access_key_id',
+            'secretAccessKey' => 'test_secret_access_key'
+        ]);
+        $this->assertInstanceOf('Moyefu\VolcengineTranslator', $volcengineTranslator);
+
+        // 测试微软翻译器创建
+        $microsoftTranslator = TranslatorFactory::create(TranslatorFactory::PLATFORM_MICROSOFT, [
+            'key' => 'test_key'
+        ]);
+        $this->assertInstanceOf('Moyefu\MicrosoftTranslator', $microsoftTranslator);
     }
 
     /**
