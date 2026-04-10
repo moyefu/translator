@@ -2,6 +2,7 @@
     "name": "moyefu/translator",
     "description": "A PHP library for integrating with various translation APIs (Baidu, Google, Youdao, etc.)",
     "type": "library",
+    "version": "1.0.0",
     "require": {
         "php": ">=5.6",
         "guzzlehttp/guzzle": "^6.3"
