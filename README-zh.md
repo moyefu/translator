@@ -119,13 +119,13 @@ foreach ($texts as $text) {
 
 | 翻译器 | API 参考 | 必需配置 |
 |--------|----------|----------|
-| **baidu** | [百度翻译 API](docs/platforms/baidu.md) | `['appId' => '...', 'key' => '...']` |
-| **google** | [谷歌翻译 API](docs/platforms/google.md) | `['key' => '...']` |
-| **youdao** | [有道翻译 API](docs/platforms/youdao.md) | `['appId' => '...', 'key' => '...']` |
-| **tencent** | [腾讯翻译 API](docs/platforms/tencent.md) | `['secretId' => '...', 'secretKey' => '...']` |
-| **ali** | [阿里翻译 API](docs/platforms/ali.md) | `['accessKeyId' => '...', 'accessKeySecret' => '...']` |
-| **volcengine** | [火山引擎翻译 API](docs/platforms/volcengine.md) | `['accessKeyId' => '...', 'accessKeySecret' => '...']` |
-| **microsoft** | [微软翻译 API](docs/platforms/microsoft.md) | `['apiKey' => '...', 'endpoint' => '...']` |
+| **baidu** | [百度翻译 API](docs/platforms/baidu-zh.md) | `['appId' => '...', 'key' => '...']` |
+| **google** | [谷歌翻译 API](docs/platforms/google-zh.md) | `['key' => '...']` |
+| **youdao** | [有道翻译 API](docs/platforms/youdao-zh.md) | `['appId' => '...', 'key' => '...']` |
+| **tencent** | [腾讯翻译 API](docs/platforms/tencent-zh.md) | `['secretId' => '...', 'secretKey' => '...']` |
+| **ali** | [阿里翻译 API](docs/platforms/ali-zh.md) | `['accessKeyId' => '...', 'accessKeySecret' => '...']` |
+| **volcengine** | [火山引擎翻译 API](docs/platforms/volcengine-zh.md) | `['accessKeyId' => '...', 'accessKeySecret' => '...']` |
+| **microsoft** | [微软翻译 API](docs/platforms/microsoft-zh.md) | `['apiKey' => '...', 'endpoint' => '...']` |
 
 ## API 参考
 
