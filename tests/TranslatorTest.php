@@ -1,9 +1,9 @@
 <?php
 
-namespace Translate\Tests;
+namespace Moyefu\Tests;
 
 use PHPUnit\Framework\TestCase;
-use Translate\TranslatorFactory;
+use Moyefu\TranslatorFactory;
 
 class TranslatorTest extends TestCase
 {
@@ -17,20 +17,20 @@ class TranslatorTest extends TestCase
             'appId' => 'test_app_id',
             'key' => 'test_key'
         ]);
-        $this->assertInstanceOf('Translate\BaiduTranslator', $baiduTranslator);
+        $this->assertInstanceOf('Moyefu\BaiduTranslator', $baiduTranslator);
 
         // Test Google translator creation
         $googleTranslator = TranslatorFactory::create('google', [
             'key' => 'test_key'
         ]);
-        $this->assertInstanceOf('Translate\GoogleTranslator', $googleTranslator);
+        $this->assertInstanceOf('Moyefu\GoogleTranslator', $googleTranslator);
 
         // Test Youdao translator creation
         $youdaoTranslator = TranslatorFactory::create('youdao', [
             'appId' => 'test_app_id',
             'key' => 'test_key'
         ]);
-        $this->assertInstanceOf('Translate\YoudaoTranslator', $youdaoTranslator);
+        $this->assertInstanceOf('Moyefu\YoudaoTranslator', $youdaoTranslator);
     }
 
     /**
@@ -53,10 +53,10 @@ class TranslatorTest extends TestCase
 
         // Test setKey method
         $translator->setKey('new_key');
-        $this->assertInstanceOf('Translate\GoogleTranslator', $translator);
+        $this->assertInstanceOf('Moyefu\GoogleTranslator', $translator);
 
         // Test setOptions method
         $translator->setOptions(['timeout' => 10]);
-        $this->assertInstanceOf('Translate\GoogleTranslator', $translator);
+        $this->assertInstanceOf('Moyefu\GoogleTranslator', $translator);
     }
 }

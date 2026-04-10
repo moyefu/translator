@@ -21,7 +21,7 @@
 您可以通过 Composer 安装该库：
 
 ```bash
-composer require translate/translator
+composer require moyefu/translator
 ```
 
 ## 使用
@@ -31,7 +31,7 @@ composer require translate/translator
 ```php
 require __DIR__ . '/vendor/autoload.php';
 
-use Translate\TranslatorFactory;
+use Moyefu\TranslatorFactory;
 
 // 创建百度翻译器
 $baiduTranslator = TranslatorFactory::create('baidu', [

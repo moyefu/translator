@@ -21,7 +21,7 @@ A PHP library for integrating with various translation APIs (Baidu, Google, Youd
 You can install the library via Composer:
 
 ```bash
-composer require translate/translator
+composer require moyefu/translator
 ```
 
 ## Usage
@@ -31,7 +31,7 @@ composer require translate/translator
 ```php
 require __DIR__ . '/vendor/autoload.php';
 
-use Translate\TranslatorFactory;
+use Moyefu\TranslatorFactory;
 
 // Create Baidu translator
 $baiduTranslator = TranslatorFactory::create('baidu', [

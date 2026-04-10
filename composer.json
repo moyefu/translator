@@ -1,5 +1,5 @@
 {
-    "name": "translate/translator",
+    "name": "moyefu/translator",
     "description": "A PHP library for integrating with various translation APIs (Baidu, Google, Youdao, etc.)",
     "type": "library",
     "version": "1.0.0",
@@ -12,12 +12,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Translate\\": "src/"
+            "Moyefu\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Translate\\Tests\\": "tests/"
+            "Moyefu\\Tests\\": "tests/"
         }
     },
     "minimum-stability": "stable",

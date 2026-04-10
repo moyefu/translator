@@ -1,6 +1,6 @@
 <?php
 
-namespace Translate;
+namespace Moyefu;
 
 use GuzzleHttp\Exception\GuzzleException;
 
