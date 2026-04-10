@@ -1,6 +1,6 @@
 # 翻译器库
 
-[English Documentation](file:///workspace/README.md) | [中文文档](file:///workspace/README-zh.md)
+[English Documentation](README.md) | [中文文档](README-zh.md)
 
 一个用于集成各种翻译 API（百度、谷歌、有道等）的 PHP 库。这个库提供了一个统一的接口，可以在不更改代码的情况下轻松切换不同的翻译服务。
 
@@ -119,13 +119,13 @@ foreach ($texts as $text) {
 
 | 翻译器 | API 参考 | 必需配置 |
 |--------|----------|----------|
-| **baidu** | [百度翻译 API](file:///workspace/docs/platforms/baidu.md) | `['appId' => '...', 'key' => '...']` |
-| **google** | [谷歌翻译 API](file:///workspace/docs/platforms/google.md) | `['key' => '...']` |
-| **youdao** | [有道翻译 API](file:///workspace/docs/platforms/youdao.md) | `['appId' => '...', 'key' => '...']` |
-| **tencent** | [腾讯翻译 API](file:///workspace/docs/platforms/tencent.md) | `['secretId' => '...', 'secretKey' => '...']` |
-| **ali** | [阿里翻译 API](file:///workspace/docs/platforms/ali.md) | `['accessKeyId' => '...', 'accessKeySecret' => '...']` |
-| **volcengine** | [火山引擎翻译 API](file:///workspace/docs/platforms/volcengine.md) | `['accessKeyId' => '...', 'accessKeySecret' => '...']` |
-| **microsoft** | [微软翻译 API](file:///workspace/docs/platforms/microsoft.md) | `['apiKey' => '...', 'endpoint' => '...']` |
+| **baidu** | [百度翻译 API](docs/platforms/baidu.md) | `['appId' => '...', 'key' => '...']` |
+| **google** | [谷歌翻译 API](docs/platforms/google.md) | `['key' => '...']` |
+| **youdao** | [有道翻译 API](docs/platforms/youdao.md) | `['appId' => '...', 'key' => '...']` |
+| **tencent** | [腾讯翻译 API](docs/platforms/tencent.md) | `['secretId' => '...', 'secretKey' => '...']` |
+| **ali** | [阿里翻译 API](docs/platforms/ali.md) | `['accessKeyId' => '...', 'accessKeySecret' => '...']` |
+| **volcengine** | [火山引擎翻译 API](docs/platforms/volcengine.md) | `['accessKeyId' => '...', 'accessKeySecret' => '...']` |
+| **microsoft** | [微软翻译 API](docs/platforms/microsoft.md) | `['apiKey' => '...', 'endpoint' => '...']` |
 
 ## API 参考
 
@@ -170,7 +170,7 @@ vendor/bin/phpunit tests/TranslatorTest.php
 
 ## 示例
 
-查看 [example.php](file:///workspace/example.php) 文件，了解如何使用该库的完整示例。
+查看 [example.php](example.php) 文件，了解如何使用该库的完整示例。
 
 ## 贡献
 

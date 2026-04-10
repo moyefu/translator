@@ -1,6 +1,6 @@
 # Translator Library
 
-[中文文档](file:///workspace/README-zh.md) | [English Documentation](file:///workspace/README.md)
+[中文文档](README-zh.md) | [English Documentation](README.md)
 
 A PHP library for integrating with various translation APIs (Baidu, Google, Youdao, etc.). This library provides a unified interface to easily switch between different translation services without changing your code.
 
@@ -119,13 +119,13 @@ foreach ($texts as $text) {
 
 | Translator | API Reference | Required Configuration |
 |------------|---------------|------------------------|
-| **baidu** | [Baidu Translate API](file:///workspace/docs/platforms/baidu.md) | `['appId' => '...', 'key' => '...']` |
-| **google** | [Google Translate API](file:///workspace/docs/platforms/google.md) | `['key' => '...']` |
-| **youdao** | [Youdao Translate API](file:///workspace/docs/platforms/youdao.md) | `['appId' => '...', 'key' => '...']` |
-| **tencent** | [Tencent Translate API](file:///workspace/docs/platforms/tencent.md) | `['secretId' => '...', 'secretKey' => '...']` |
-| **ali** | [Ali Translate API](file:///workspace/docs/platforms/ali.md) | `['accessKeyId' => '...', 'accessKeySecret' => '...']` |
-| **volcengine** | [Volcengine Translate API](file:///workspace/docs/platforms/volcengine.md) | `['accessKeyId' => '...', 'accessKeySecret' => '...']` |
-| **microsoft** | [Microsoft Translate API](file:///workspace/docs/platforms/microsoft.md) | `['apiKey' => '...', 'endpoint' => '...']` |
+| **baidu** | [Baidu Translate API](docs/platforms/baidu.md) | `['appId' => '...', 'key' => '...']` |
+| **google** | [Google Translate API](docs/platforms/google.md) | `['key' => '...']` |
+| **youdao** | [Youdao Translate API](docs/platforms/youdao.md) | `['appId' => '...', 'key' => '...']` |
+| **tencent** | [Tencent Translate API](docs/platforms/tencent.md) | `['secretId' => '...', 'secretKey' => '...']` |
+| **ali** | [Ali Translate API](docs/platforms/ali.md) | `['accessKeyId' => '...', 'accessKeySecret' => '...']` |
+| **volcengine** | [Volcengine Translate API](docs/platforms/volcengine.md) | `['accessKeyId' => '...', 'accessKeySecret' => '...']` |
+| **microsoft** | [Microsoft Translate API](docs/platforms/microsoft.md) | `['apiKey' => '...', 'endpoint' => '...']` |
 
 ## API Reference
 
@@ -170,7 +170,7 @@ vendor/bin/phpunit tests/TranslatorTest.php
 
 ## Example
 
-Check out the [example.php](file:///workspace/example.php) file for a complete example of how to use the library.
+Check out the [example.php](example.php) file for a complete example of how to use the library.
 
 ## Contributing
 
