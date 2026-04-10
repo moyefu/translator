@@ -1,8 +1,8 @@
 # 阿里翻译 API 申请指南
 
-[首页](../../../README-zh.md) > [API 文档](../../../docs/platforms) > [阿里翻译 API](../../../docs/platforms/ali-zh.md)
+[首页](../..) > [API 文档](..) > [阿里翻译 API](ali-zh.md)
 
-[English Version](../../../docs/platforms/ali.md)
+[English Version](ali.md)
 
 ## 申请步骤
 

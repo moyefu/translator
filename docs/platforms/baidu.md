@@ -1,8 +1,8 @@
 # Baidu Translate API Application Guide
 
-[Home](../../../README.md) > [API Documentation](../../../docs/platforms) > [Baidu Translate API](../../../docs/platforms/baidu.md)
+[Home](../..) > [API Documentation](..) > [Baidu Translate API](baidu.md)
 
-[中文版本](../../../docs/platforms/baidu-zh.md)
+[中文版本](baidu-zh.md)
 
 ## Application Steps
 

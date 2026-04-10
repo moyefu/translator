@@ -1,8 +1,8 @@
 # 谷歌翻译 API 申请指南
 
-[首页](../../../README-zh.md) > [API 文档](../../../docs/platforms) > [谷歌翻译 API](../../../docs/platforms/google-zh.md)
+[首页](../..) > [API 文档](..) > [谷歌翻译 API](google-zh.md)
 
-[English Version](../../../docs/platforms/google.md)
+[English Version](google.md)
 
 ## 申请步骤
 

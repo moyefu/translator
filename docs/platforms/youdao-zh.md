@@ -1,8 +1,8 @@
 # 有道翻译 API 申请指南
 
-[首页](../../../README-zh.md) > [API 文档](../../../docs/platforms) > [有道翻译 API](../../../docs/platforms/youdao-zh.md)
+[首页](../..) > [API 文档](..) > [有道翻译 API](youdao-zh.md)
 
-[English Version](../../../docs/platforms/youdao.md)
+[English Version](youdao.md)
 
 ## 申请步骤
 

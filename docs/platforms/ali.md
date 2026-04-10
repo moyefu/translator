@@ -1,8 +1,8 @@
 # Ali Translate API Application Guide
 
-[Home](../../../README.md) > [API Documentation](../../../docs/platforms) > [Ali Translate API](../../../docs/platforms/ali.md)
+[Home](../..) > [API Documentation](..) > [Ali Translate API](ali.md)
 
-[中文版本](../../../docs/platforms/ali-zh.md)
+[中文版本](ali-zh.md)
 
 ## Application Steps
 

@@ -1,8 +1,8 @@
 # Google Translate API Application Guide
 
-[Home](../../../README.md) > [API Documentation](../../../docs/platforms) > [Google Translate API](../../../docs/platforms/google.md)
+[Home](../..) > [API Documentation](..) > [Google Translate API](google.md)
 
-[中文版本](../../../docs/platforms/google-zh.md)
+[中文版本](google-zh.md)
 
 ## Application Steps
 

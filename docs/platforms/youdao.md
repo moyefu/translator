@@ -1,8 +1,8 @@
 # Youdao Translate API Application Guide
 
-[Home](../../../README.md) > [API Documentation](../../../docs/platforms) > [Youdao Translate API](../../../docs/platforms/youdao.md)
+[Home](../..) > [API Documentation](..) > [Youdao Translate API](youdao.md)
 
-[中文版本](../../../docs/platforms/youdao-zh.md)
+[中文版本](youdao-zh.md)
 
 ## Application Steps
 

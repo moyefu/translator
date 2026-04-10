@@ -1,8 +1,8 @@
 # Tencent Translate API Application Guide
 
-[Home](../../../README.md) > [API Documentation](../../../docs/platforms) > [Tencent Translate API](../../../docs/platforms/tencent.md)
+[Home](../..) > [API Documentation](..) > [Tencent Translate API](tencent.md)
 
-[中文版本](../../../docs/platforms/tencent-zh.md)
+[中文版本](tencent-zh.md)
 
 ## Application Steps
 
