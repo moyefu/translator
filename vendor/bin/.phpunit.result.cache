@@ -1,0 +1,1 @@
+{"version":1,"defects":[],"times":{"Translate\\Tests\\TranslatorTest::testFactoryCreation":0.006,"Translate\\Tests\\TranslatorTest::testInvalidTranslatorType":0.001,"Translate\\Tests\\TranslatorTest::testTranslatorMethods":0}}

@@ -1,0 +1,24 @@
+{
+    "name": "translate/translator",
+    "description": "A PHP library for integrating with various translation APIs (Baidu, Google, Youdao, etc.)",
+    "type": "library",
+    "version": "1.0.0",
+    "require": {
+        "php": ">=5.6",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Translate\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Translate\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable"
+}
